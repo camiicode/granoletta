@@ -1,0 +1,58 @@
+@mixin gr-generate-color-classes($prefix, $type) {
+
+  // Theme Background Colors
+  .#{$prefix}-primary {
+    #{$type}: var(--gr-primary-color);
+  }
+  .#{$prefix}-secondary {
+    #{$type}: var(--gr-secondary-color);
+  }
+  .#{$prefix}-tertiary {
+    #{$type}: var(--gr-tertiary-color);
+  }
+
+  //Accent Colors
+  .#{$prefix}-wisteria {
+    #{$type}: var(--gr-wisteria-color);
+  }
+  .#{$prefix}-fawn {
+    #{$type}: var(--gr-fawn-color);
+  }
+  .#{$prefix}-lightred {
+    #{$type}: var(--gr-light-red-color);
+  }
+  .#{$prefix}-ciner {
+    #{$type}: var(--gr-ciner-color);
+  }
+}
+
+// Generar clases de fondo
+@include gr-generate-color-classes("gr-bg", "background-color");
+
+// Generar clases de texto
+@include gr-generate-color-classes("gr-text ", "color");
+
+// Media Queries
+@mixin mq($width, $type: max) {
+  @if map_has_key($breakpoints, $width) {
+    $width: map_get($breakpoints, $width);
+    @if $type == min {
+      $width: $width - 1px;
+    }
+    @media only screen and (#{$type}-width: $width) {
+      @content;
+    }
+  } @else {
+    @warn 'No hay un dimension #{$width} definido';
+  }
+  // @include mq( {{ $breakpoint }}, {{ @'min' or @'max' }} ) { @content }
+}
+
+// Meadia Queries for landscape
+@mixin mq-l($width, $type: max){
+  $width: map_get($breakpoints, $width);
+  @media (#{$type}-width: $width) and (orientation: landscape) {
+    @content;
+  }
+  // @include mq-l( {{ $brekpoint }} ) { @content }
+}

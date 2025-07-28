@@ -1,0 +1,71 @@
+@use "../base/mixins";
+
+header  {
+  .header {
+    &-nav {
+      &__list {
+        li {
+          margin: 0 10px;
+          border: 1px solid #000;
+          border-radius: 50%;
+
+          a {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+              width: auto;
+              max-width: 100%;
+              object-fit: contain;
+              object-position: center;
+            }
+          }
+        }
+      }
+    }
+    &-menu {
+      &__list {
+        li {
+          margin: 0 10px;
+          padding: 10px 30px;
+
+          a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &.active span {
+              color: var(--gr-primary-color);
+              position: relative;
+
+              &::before {
+                content: "";
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 100%;
+                height: 1px;
+                background-color: var(--gr-primary-color);
+              }
+            }
+
+            img {
+              width: auto;
+              max-width: 100%;
+              min-width: 160px;
+            }
+
+            span {
+              font-size: 1.25rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+// Font
+$mulish: "Mulish", sans-serif;
+
+// Colors
+$primary-color:         #058677;
+$secondary-color:       #058677;
+$tertiary-color:        #000000;
+
+// Accent colors
+$light-color:           #ffffff;
+$dark-color:            #333333;
+  
+// Theme Colors
+$wisteria-color:        #C4AADC;
+$fawn-color:            #FEC27C;
+$light-red-color:       #FE9393;
+$cinercolor:            #A68A80;
+
+
+:root {
+
+  // Font
+  --gr-mulish: "Mulish", sans-serif;
+
+  // Colors
+  --gr-primary-color:         #058677;
+  --gr-secondary-color:       #058677;
+  --gr-tertiary-color:        #000000;
+
+  // Accent colors
+  --gr-light-color:           #ffffff;
+  --gr-dark-color:            #333333;
+  
+  // Theme Colors
+  --gr-wisteria-300-color:    #D7C5E7;
+  --gr-wisteria-600-color:    #CDB7E1;
+  --gr-wisteria-color:        #C4AADC;
+
+  --gr-fawn-300-color:        #FED9AE;
+  --gr-fawn-600-color:        #FECF9A;
+  --gr-fawn-color:            #FEC27C;
+
+  --gr-light-red-300-color:   #FEC2C2;
+  --gr-light-red-600-color:   #FEAEAE;
+  --gr-light-red-color:       #FE9393;
+
+  --gr-ciner-300-color:       #BCA69F;
+  --gr-ciner-600-color:       #B49B93;
+  --gr-ciner-color:           #A68A80;
+}
