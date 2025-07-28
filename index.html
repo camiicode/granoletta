@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-+zZ6/2+/QU0PHTP0vJmIjqV6PyfPgOp+uM0nSOPvJH+uNK0zOm1vzzHzxRnWAmKSePSRavdf7rRO9v1fODF+3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Granoletta</title>
+  </head>
+  <body class="relative">
+    
+    <header id="site-header" class="fixed left-0 right-0 z-999 transition-all duration-300">
+      <div class="container mx-auto px-4 py-2">
+        <div class="grid grid-cols-12 gap-4 flex items-center">
+          <div class="col-span-2 header">
+            <nav dir="ltr header-nav">
+              <ul class="list-none flex align-content-center header-nav__list">
+                <li><a href="#"><img src="./assets/icon/facebook.svg" alt="facebook"></a></li>
+                <li><a href="#"><img src="./assets/icon/instagram.svg" alt="instagram"></a></li> 
+                <li><a href="#"><img src="./assets/icon/whatsapp.svg" alt="whatsapp"></a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-span-8 header-nav header">
+            <nav dir="ltr" role="navigation header-menu">
+              <ul class="list-none flex justify-center items-center text-center header-menu__list">
+                <li>
+                  <a href="#" class="active">
+                    <span>Inicio</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>Tienda</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./assets/brand/logo.png" alt="logo">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>Packs</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>Nosotros</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-span-2 header-profile header">
+            <nav dir="rtl" class="header-nav">
+              <ul class="list-none flex justify-center header-nav__list">
+                <li>
+                  <a href="#">
+                    <img src="./assets/icon/cart.svg" alt="carrito-de-compras">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./assets/icon/favorites.svg" alt="buscar">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="/assets/icon/account.svg" alt="mi-cuenta">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./assets/icon/search.svg" alt="buscar">
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+      <section class="gr gr-section gr-hero" id="gr-hero">
+        <div class="container-fluid w-full mx-auto pb-25">
+          <div class="swiper gr-slider">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide relative" data-tilt>
+                <img src="./assets/products/mango.png" alt="granola-mango">
+
+                <div class="swiper-slide__content swiper-slide__content--mango">
+                  <h1 class="swiper-slide__content--title">
+                    <span>mango</span><br>
+                    jengibre
+                  </h1>
+                  <div class="swiper-slide__content--divider"></div>
+                  <div class="swiper-slide__content--button flex items-center">
+                    <a href="#" class="btn gr-btn-cart-slider flex">
+                      <div>
+                        <img src="./assets/icon/cart.svg" alt="carrito-de-compras">
+                      </div>
+                      <span>agregar al carrito</span>
+                    </a>
+                    <p>
+                      <span class="block">8,00 €</span>
+                      <span class="block">1Kg</span>
+                    </p>
+                  </div>
+                  <div class="swiper-slide__content--description">
+                    <p>Nuestra granola más exótica, con un sabor original y que te hará disfrutar de tus desayunos, meriendas o snacks.</p>
+                  </div>
+                </div>
+
+              </div>
+              <div class="swiper-slide" data-tilt>
+                <img src="./assets/products/red-fruits.png" alt="granola-frutos-rojos">
+                
+                <div class="swiper-slide__content swiper-slide__content--mango">
+                  <h1 class="swiper-slide__content--title">
+                    <span>mango</span>
+                    jengibre
+                  </h1>
+                  <div class="swiper-slide__content--divider"></div>
+                  <div class="swiper-slide__content--button flex">
+                    <a href="#" class="btn gr-btn-cart-slider gr-btn-cart-slider__mango flex">
+                      <div class="gr-btn-cart-slider__icon">
+                        <img src="./assets/icon/cart.svg" alt="carrito-de-compras">
+                      </div>
+                      <span>agregar al carrito</span>
+                    </a>
+                    <p>
+                      <span class="block">8,00 €</span>
+                      <span class="block">1Kg</span>
+                    </p>
+                  </div>
+                  <div class="swiper-slide__content--description">
+                    <p>Nuestra granola más exótica, con un sabor original y que te hará disfrutar de tus desayunos, meriendas o snacks.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide" data-tilt>
+                <img src="./assets/products/cocoa.png" alt="granola-cacao">
+                
+                <div class="swiper-slide__content swiper-slide__content--mango">
+                  <h1 class="swiper-slide__content--title">
+                    <span>mango</span>
+                    jengibre
+                  </h1>
+                  <div class="swiper-slide__content--divider"></div>
+                  <div class="swiper-slide__content--button flex">
+                    <a href="#" class="btn gr-btn-cart-slider gr-btn-cart-slider__mango flex">
+                      <div class="gr-btn-cart-slider__icon">
+                        <img src="./assets/icon/cart.svg" alt="carrito-de-compras">
+                      </div>
+                      <span>agregar al carrito</span>
+                    </a>
+                    <p>
+                      <span class="block">8,00 €</span>
+                      <span class="block">1Kg</span>
+                    </p>
+                  </div>
+                  <div class="swiper-slide__content--description">
+                    <p>Nuestra granola más exótica, con un sabor original y que te hará disfrutar de tus desayunos, meriendas o snacks.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide" data-tilt>
+                <img src="./assets/products/blueberries-matcha.png" alt="granola-arandanos-matcha">
+                
+                <div class="swiper-slide__content swiper-slide__content--mango">
+                  <h1 class="swiper-slide__content--title">
+                    <span>mango</span>
+                    jengibre
+                  </h1>
+                  <div class="swiper-slide__content--divider"></div>
+                  <div class="swiper-slide__content--button flex">
+                    <a href="#" class="btn gr-btn-cart-slider gr-btn-cart-slider__mango flex">
+                      <div class="gr-btn-cart-slider__icon">
+                        <img src="./assets/icon/cart.svg" alt="carrito-de-compras">
+                      </div>
+                      <span>agregar al carrito</span>
+                    </a>
+                    <p>
+                      <span class="block">8,00 €</span>
+                      <span class="block">1Kg</span>
+                    </p>
+                  </div>
+                  <div class="swiper-slide__content--description">
+                    <p>Nuestra granola más exótica, con un sabor original y que te hará disfrutar de tus desayunos, meriendas o snacks.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="gr gr-section gr-categories" id="gr-categories">
+        <div class="container mx-auto py-25">
+
+          <div class="grid grid-cols-12 gap-4">
+
+            <div class="col-span-4 gr-categories-col gr-categories-col__title text-center bg">
+              <h2>Nuestros <br/> productos</h2>
+              <p>Productos artesanales, sin secretos: solo ingredientes reales y mucho cariño.</p>
+              <img src="/assets/images/dry-leave__divider--1.png" alt="hoja-divisiora">
+            </div>
+
+            <div class="col-span-4 gr-categories-col gr-categories-col__category gr-bg-ciner bg-[url(/assets/images/categories-thumbnail__bottom.png)] text-center">
+              <a href="#">
+                <img src="/assets/products/american-cookies.png" alt="american-cookies">
+                <h3>american cookies</h3>
+              </a>
+            </div>
+
+            <div class="col-span-4 gr-categories-col gr-categories-col__category gr-bg-lightred bg-[url(/assets/images/categories-thumbnail__bottom.png)] text-center">
+              <a href="#">
+                <img src="/assets/products/bolleria.png" alt="american-cookies">
+                <h3>Bolleria</h3>
+              </a>
+            </div>
+
+            <div class="col-span-4 gr-categories-col gr-categories-col__category bg-blue-400 bg-[url(/assets/images/categories-thumbnail__bottom.png)] text-center">
+              <a href="#">
+                <img src="/assets/products/galletas.png" alt="american-cookies">
+                <h3>Galletas</h3>
+              </a>
+            </div>
+
+            <div class="col-span-4 gr-categories-col gr-categories-col__category gr-bg-tertiary bg-[url(/assets/images/categories-thumbnail__bottom.png)] text-center">
+              <a href="#">
+                <img src="/assets/products/blueberries-matcha.png" alt="american-cookies">
+                <h3>Granolas</h3>
+              </a>
+            </div>
+
+            <div class="col-span-4 gr-categories-col gr-categories-col__category bg-orange-200 bg-[url(/assets/images/categories-thumbnail__bottom.png)] text-center">
+              <a href="#">
+                <img src="/assets/products/cremas.png" alt="american-cookies">
+                <h3>cremas</h3>
+              </a>
+            </div>
+
+            <div class="col-span-4 gr-categories-col gr-categories-col__category gr-bg-primary bg-[url(/assets/images/categories-thumbnail__bottom.png)] text-center">
+              <a href="#">
+                <img src="/assets/products/panes.png" alt="american-cookies">
+                <h3>panes</h3>
+              </a>
+            </div>
+
+            <div class="col-span-4 gr-categories-col gr-categories-col__category gr-bg-wisteria bg-[url(/assets/images/categories-thumbnail__bottom.png)] text-center">
+              <a href="#">
+                <img src="/assets/products/snacks.png" alt="american-cookies">
+                <h3>snacks</h3>
+              </a>
+            </div>
+
+            <div class="col-span-4 gr-categories-col gr-categories-col__category gr-bg-fawn bg-[url(/assets/images/categories-thumbnail__bottom.png)] text-center">
+              <a href="#">
+                <img src="/assets/products/packs.png" alt="american-cookies">
+                <h3>packs</h3>
+              </a>
+            </div>
+
+          </div>
+          
+        </div>
+      </section>
+
+      <section class="gr gr-section gr-products" id="gr-products"></section>
+      <section class="gr gr-section gr-faq" id="gr-faq"></section>
+      <section class="gr gr-section gr-about" id="gr-about"></section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="flex flex-col md:flex-row">
+
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const granolettaSlider = new Swiper('.gr-slider', {
+        slidesPerView: 5,
+        centeredSlides: false,
+        spaceBetween: 40,
+        loop: true,
+        grabCursor: true,
+        slideToClickedSlide: true,
+      });
+    </script>
+    <script>
+      const header = document.getElementById("site-header");
+      window.addEventListener('scroll', () => {
+        if (window,scrollY > 50) {
+          header.classList.add("bg-white", "py-1", "shadow-md");
+          header.classList.remove("py-2")
+        } else {
+          header.classList.remove("bg-white", "py-1", "shadow-md");
+          header.classList.add("py-2");
+        }
+      });
+    </script>
+  </body>
+</html>
